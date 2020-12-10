@@ -11,8 +11,8 @@
 ## Modules
 
 -   [Terminal Command Line](terminal/terminal.md)
--   [Git & GitHub](git/git.md)
--   [Git & GitHub](git/github.md)
+-   [Git](git/git.md)
+-   [GitHub](git/github.md)
 -   [HTML](htmlcss/html.md)
 -   [CSS](htmlcss/css.md)
 -   [Bootstrap](bootstrap/bootstrap.md)
