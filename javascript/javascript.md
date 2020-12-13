@@ -40,7 +40,7 @@ JS Basics to know
         -   == ignores type
     -   undefined values
     -   null values
-    -   explain the diferrence between undefined and null
+    -   explain the difference between undefined and null
 -   reserved keywords
     -   if
     -   var

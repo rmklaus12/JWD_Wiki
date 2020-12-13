@@ -20,7 +20,6 @@
             -   Algorithms perform certain steps based on conditions of the system.
         -   They are **generalizable**
             -   Algorithms are applicable to many different problems that are of a similar type.
-    -
     -   _Coding_ is the process of transforming those ideas into a written language that a computer can understand.
 -   _separation of concerns_ - problems or features are organized in a way that makes code easy to understand and maintain.
 -   **Variables**
