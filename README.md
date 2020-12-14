@@ -2,6 +2,10 @@
 
 ### Robin Klaus - Instructor
 
+_this wiki is a collection of my own learning notes and much of the content is from_
+[Rithm School](https://www.rithmschool.com/) &
+[Codecademy](https://www.codecademy.com/)
+
 ## Projects
 
 -   [Weather App](weatherapp/index.html)
