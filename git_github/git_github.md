@@ -8,7 +8,7 @@
 -   GitHub is a platform to use Git
     Use Git commands to help keep track of changes made to a project:
 
-        -   `git init`  creates a new Git repository
+        -   `git init`  creates (initialises) a new Git repository
         -   `git status`  inspects the contents of the working directory and staging area
         -   `git add`  adds files from the working directory to the staging area and changes the file from untracked to tracked
         -   `git diff`  shows the difference between the working directory and the staging area
@@ -47,8 +47,11 @@
 
 ### GitHub Workflow
 
-The typical workflow on GitHub is:
-
+-   _Working Directory_ - where all work is done: creating, editing, deleting, and organizing files.
+-   _Staging Area_ - where you'll list changes you make to the working directory
+-   _Repository_ - where Git permanently stores those changes as different _versions_ of the project
+-   The basic workflow on GitHub is:
+    -   `git init` --> creates a _Working Direcotry_ --> `git add`--> moves files to _Staging Area_ --> `git commit` --> changes are saved to a repo as a commit.
 -   `fork` a repo on GitHub - making a copy of someone else's remote repo and add it under our usrname so we can push code to it
 -   `clone` a remote repo - download code from a forked remote repo onto a local computer (a local repo). `git clone` makes a directory and does the `git init` and `git remote` step automatically.
 -   issue a `pull request` - a PR or pull request is a request for someone with permissions on a remote repo to evalute your code and determine if it can be merged or not.
