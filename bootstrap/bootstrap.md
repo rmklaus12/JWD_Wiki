@@ -91,7 +91,7 @@
         -   On _extra small_ and _small sized screens_, the column has a width of 12 individual columns.
         -   For _medium_ and _large sized screens_, the column has a width of 8 individual columns.
         -   For _extra large screens_, the column has a width of 6 individual columns.
--   Bootstrap 4 Grid Review
+-   Bootstrap 4 Grid Review (Codecademy)
     -   When in doubt, check [Bootstrap’s documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/).
     -   There are a few required links to use Bootstrap (the CSS file and two `<meta>` tags)
     -   Bootstrap 4 has a grid system implemented using flexbox

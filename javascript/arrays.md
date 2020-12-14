@@ -1,3 +1,5 @@
+### Arrays Review (Codecademy)
+
 -   Arrays are lists that store data in JavaScript
 -   Always created with brackets `[]`
 -   Each item in an array has an index (or numbered position), starting at 0

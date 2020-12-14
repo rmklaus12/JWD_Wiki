@@ -1,51 +1,48 @@
-1.  JS can be used in both front-end and back-end development.
-2.  JS is standarized and frequently updated
-3.  JS integrates easily with HTML and CSS
-4.  JS allows websites to have interactivity like transitions and object movement. As well as:
-    -   popup ads
-    -   animated graphics (2D or 3D)
-    -   interactive audio and video
-    -   maps and other features access the user’s geographic location
-    -   and much more!
-5.  JS offers a wide range of frameworks and libraries to help create complex applications with low overhead.
-    framework -
-    library -
+### JavaScript
 
--   Functions allow us to write a chunk of code once that can be reused over and over.
--   Events allow JavaScript to respond to user behaviors, like the user hovering their mouse over an HTML element or resizing their window.
+1. Can be used in both front-end and back-end development.
+2. Standarized and frequently updated
+3. Integrates easily with HTML and CSS
+4. Allows websites to have interactivity like transitions and object movement. As well as:
+    - popup ads
+    - animated graphics (2D or 3D)
+    - interactive audio and video
+    - maps and other features access the user’s geographic location
+    - and much more!
+5. Offers a wide range of frameworks and libraries to help create complex applications with low overhead.
+   _framework_ -
+   _library_ -
+6. Server-side JS began in the early 2000s with Facebook and Google. It allows for scalability and can be integrated with other languages.
+7. Node is one of the more popular versions of server-side JS. Used by Google Cloud and AWS
 
-server-side JS began in the early 2000s with Facebook and Google. It allows for scalability and can be integrated with other languages.
-Node is one of the more popular versions of server-side JS. Used by Google Cloud and AWS
+### JS Basics to know
 
-JS Basics to know
-
--   Explain what the DOM is
--   Use JS Numbers data types
-    -   adding & subtracting numbers
-    -   multiplying & dividing numbers
-    -   incrementing/decrementing number values
--   use order of operations
--   use the modulo operator
--   use ++ and -- operators
--   use strings
-    -   string operations
-    -   escaping characters
--   use booleans data type
-    -   creating a boolean value
-    -   booleans from comparison operators
+-   Data types
+    -   Numbers
+        -   adding & subtracting numbers
+        -   multiplying & dividing numbers
+        -   incrementing/decrementing number values
+    -   Strings
+        -   string operations
+        -   escaping characters
+    -   Boolean
+        -   `true` & `false`
+-   Order of operations
+-   Operators
+    -   Modulo operator `%`
+    -   ++ and -- operators
     -   equality operators
         -   === and !==
         -   == and !=
-        -   which equality operators should be used?
         -   == ignores type
-    -   undefined values
-    -   null values
-    -   explain the difference between undefined and null
+-   undefined values
+-   null values
+-   Difference between undefined and null
 -   reserved keywords
     -   if
     -   var
 
-### Key concepts & review
+### Key concepts & Review (Codecademy)
 
 -   Data is printed, or logged, to the console, a panel that displays messages, with `console.log()`.
 -   We can write single-line comments with `//` and multi-line comments between `/*` and `*/`.

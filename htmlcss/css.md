@@ -1,6 +1,4 @@
-Review CSS Selectors
-
-Throughout this lesson, you learned how to select HTML elements with CSS and apply styles to them. Let’s review what you learned:
+### CSS Selectors Review (Codecademy)
 
 -   CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.
 -   CSS can select HTML elements by tag, class, or ID.
@@ -11,13 +9,7 @@ Throughout this lesson, you learned how to select HTML elements with CSS and app
 -   Nested elements can be selected by separating selectors with a space.
 -   Multiple unrelated selectors can receive the same styles by separating the selector names with commas.
 
-Great work this lesson. With this knowledge, you’ll be able to use CSS to change the look and feel of websites to make them look great.
-
-### Box Model
-
-Review
-
-In this lesson, we covered the four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics. Let’s take a minute to review what you learned.
+### Box Model Review (Codecademy)
 
 1.  The box model comprises a set of properties used to create space around and between HTML elements.
 2.  The height and width of a content area can be set in pixels or percentage.

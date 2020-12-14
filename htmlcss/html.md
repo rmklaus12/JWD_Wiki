@@ -7,5 +7,4 @@
     -   opening tag
     -   content
     -   closing tag
--   Hyper text - text that is linked to other text
--
+-   _Hyper text_ - text that is linked to other text

@@ -1,10 +1,3 @@
-| Action | HTTP Method   | Description                  |
-| ------ | ------------- | ---------------------------- |
-| Create | `POST`        | Creates a new resource       |
-| Read   | `GET`         | Retrieves a resource         |
-| Update | `PUT`/`PATCH` | Updates an existing resource |
-| Delete | `DELETE`      | Deletes a resource           |
-
 ## Web Storage API
 
 The Web Storage API defines two storage mechanisms:
@@ -88,7 +81,7 @@ try {
 
 You can use any string to set a value, but it is recommended to only use the Web Storage API objects (`setItem`, `getItem`, `removeItem`, `key`, `length`)
 Example:
-`localStorage.colorSettign = '#a4509b'`
+`localStorage.colorSettiNG = '#a4509b'`
 
 ### Resources
 

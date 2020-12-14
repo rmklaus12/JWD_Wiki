@@ -9,55 +9,33 @@ OOP
 
 object literal
 : we've literally written out the object contents as we've come to create it.
-
-```
-const objectName = {
-	member1Name: member1Value,
-	member2Name: member2Value,
-	member3Name: member3Value
-};
-```
-
+` const objectName = { member1Name: member1Value, member2Name: member2Value, member3Name: member3Value }; `
 Dot notation
 : the object name (objectName) acts as the **namespace** - it must be entered first to access anyting **encapsulated** inside the object. - Object data can be stored neatly (encapsulated) inside an object package (namespace) making it easy to structure and access.
-
-```
-objectName.member2Value
-objectName.member1Value
-```
-
+` objectName.member2Value objectName.member1Value `
 Bracket notation
 : Another way to access object properties
-
-```
-\\\ instead of
-person.age
-person.name.first
-\\ use
-person['age'],
-person['name'['first']
-```
+` \\\ instead of person.age person.name.first \\ use person['age'], person['name'['first'] `
 
 Sub-namespace
 : the value of an object member is another object. When using sub-name spaces, using [i] to access items will not work. Must use dot notation only `name.first`
-
 ```
 const person = {
-	name: ['Robin', 'Klaus'],
+name: ['Robin', 'Klaus'],
 }
 
-// sub-namespace
-const person = {
-	name: {
-	first: 'Robin',
-	last: 'Klaus'
-	}
-}
+    // sub-namespace
+    const person = {
+    	name: {
+    	first: 'Robin',
+    	last: 'Klaus'
+    	}
+    }
 
-// dot notation
-person.name.first
-person.name.last
-```
+    // dot notation
+    person.name.first
+    person.name.last
+    ```
 
 **Set (update) object member values**
 
@@ -114,14 +92,8 @@ const person2 = {
 
 -   **Child classes** can be made to **inherit** the data and code features of their **parent class**. You can reuse functionality common to all the object types rather than having to duplicate it.
     Inhertiting from another constructor `Person`:
-
-```
-function Teacher(first, last, age, gender, interests, subject) {
-	Person.call(this, first, last, age, gender, interests);
-this.subject = subject;
-```
-
-Inheriting from a constructor with no parameters:
+    ` function Teacher(first, last, age, gender, interests, subject) { Person.call(this, first, last, age, gender, interests); this.subject = subject; `
+    Inheriting from a constructor with no parameters:
 
 ```
 function Brick() {
@@ -167,16 +139,8 @@ let person1 = new Object({
 ````
 
 -   The create() method
-
-```
-// If you're only creating a few instances of an object // you can use the create() method which allows you to // create object instances without first creating
-// constructors.
-let person2 = Object.create(person1);
-// person2 will be created based on person1 - the same properties and methods available to it.
-```
-
-**JSON**
-
+    ` // If you're only creating a few instances of an object // you can use the create() method which allows you to // create object instances without first creating // constructors. let person2 = Object.create(person1); // person2 will be created based on person1 - the same properties and methods available to it. `
+    **JSON**
 -   JSON is a text-based data format following JavaScript object syntax
 -   JSON exists as a string which is useful when you want to transmit data across a network.
 -   JSON needs to be converted to a native JavaScript object when you want to access the data. JavaScript provides a global JSON object that has methods available for converting between the two.
