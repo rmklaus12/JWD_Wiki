@@ -1,4 +1,4 @@
-# Generation / AcademyXi Junior Web Developer Program
+# Generation Australia Junior Web Developer Program
 
 ### Robin Klaus - Instructor
 
