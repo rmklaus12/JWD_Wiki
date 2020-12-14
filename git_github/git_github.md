@@ -108,6 +108,22 @@ The typical workflow on GitHub is:
 
 ### Rebasing
 
+-   solves the same problem as `git merge` as it is designed to integrate changes from one branch into another, but done in a very different way.
+-   gives complete control over the entire commit history
+-   **Merging** is a _non-destructive_ operation, but does create extraneous merge commits, which "pollutes" the feature branch's history.
+-   **Rebasing** moves the entire feature branch to begin on the tip of the `main` branch, effectively incorporating all of the new commits in `main`. But instead of using a merge commit, rebase _rewrites_ the project history with brand new commits, creating a much cleaner project history.
+-   _Interactive rebasing_ gives the opportunity to alter commits as they are moved to the new branch offering complete control over the branch's commit history.
+-   `git checkout feature git rebase -i main` will open a text editor with all commits about to be moved
+-   **NEVER** use `git rebase` on _public_ branches!!
+-   will need to force the push after rebase as the remote branch will have a different commit history. Use this command with caution and never if other are working on the remote branch.
+-   `git push -f`
+
+### Reverting
+
+-   `git revert` will undo previous commits in a safer fashion than `git reset`
+-   `git revert` (unlike `git reset`) appends a new commit with the resulting content
+-   `git reflog` - shows previous changes you have made to specific commits.
+
 ### Diff tools
 
 -   `git diff` - see changes in the working tree not yet staged for the next commit
@@ -124,3 +140,4 @@ The typical workflow on GitHub is:
 
 [Git-SCM](https://git-scm.com/)
 [GitHub](https://github.com/)
+[Atlassian: Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
