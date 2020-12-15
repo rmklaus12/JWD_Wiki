@@ -3,6 +3,7 @@
 -   Full Stack Options
     -   [Free Code Camp](https://www.freecodecamp.org/)
     -   [The Odin Project](https://www.theodinproject.com/)
+    -   [Rithm School](https://www.rithmschool.com/)
 -   JavaScript
     -   [JavaScript for Cats](http://jsforcats.com/)
     -   [Learn JS.org](https://www.learn-js.org/)
