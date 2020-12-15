@@ -1,0 +1,39 @@
+### Student Learning Directory
+
+-   Full Stack Options
+    -   [Free Code Camp](https://www.freecodecamp.org/)
+    -   [The Odin Project](https://www.theodinproject.com/)
+-   JavaScript
+    -   [JavaScript for Cats](http://jsforcats.com/)
+    -   [Learn JS.org](https://www.learn-js.org/)
+-   Git & GitHub
+    -   [GitHub Lab](https://lab.github.com/)
+-   Tutorials & Stuff
+    -   [w3Schools](https://www.w3schools.com/)
+    -   [JavaScript 30](https://javascript30.com/)
+    -   [Udemy.com](https://www.udemy.com/)
+    -   [CSS-Tricks](https://css-tricks.com/)
+    -   [Codrops](http://tympanus.net/codrops/)
+    -   [HTML Full Course YouTube](https://youtu.be/pQN-pnXPaVg)
+    -   [HTML & CSS](https://learn.shayhowe.com/)
+    -   [CodeCollege.ca](https://codecollege.ca/)
+-   Code Challenges
+    -   [Exercism.io](https://exercism.io/)
+    -   [Programming Algorithms](https://algorithm.codingdojo.com/)
+    -   [CodeWars](https://www.codewars.com/)
+-   Light Reading
+    -   [MDN Docs](https://developer.mozilla.org/en-US/)
+    -   [Eloquent JavaScript](https://eloquentjavascript.net/)
+    -   [A List Apart](https://alistapart.com/)
+    -   [CodingDojo Blog](https://www.codingdojo.com/blog/category/coding-tips)
+    -   [David Walsh Blog](https://davidwalsh.name/)
+-   Gamified Learning
+    -   [CodinGame](https://www.codingame.com/)
+    -   [CodeCombat](https://codecombat.com/play)
+    -   [while True: learn() on Stream (A$ 18.50)](https://store.steampowered.com/app/619150/while_True_learn/)
+    -   [Elevator Saga](https://play.elevatorsaga.com/)
+    -   [Flexbox Defense](http://www.flexboxdefense.com/)
+    -   [CSS Diner](https://flukeout.github.io/)
+-   Other resource collections
+    -   [Hackr.io](https://hackr.io/)
+    -   [Skillcrush's 64 online resources to learn to code for free](https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/)

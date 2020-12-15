@@ -6,6 +6,10 @@ _this wiki is a collection of my own learning notes and much of the content is f
 [Rithm School](https://www.rithmschool.com/) &
 [Codecademy](https://www.codecademy.com/)
 
+## Resource List for Additional Learning
+
+-   [Resources](resources/list.md)
+
 ## Projects
 
 -   [Weather App](weatherapp/index.html)
@@ -14,13 +18,23 @@ _this wiki is a collection of my own learning notes and much of the content is f
 
 ## Modules
 
+-   [General Info](general_info/general_info.md)
 -   [Terminal Command Line](terminal/terminal.md)
--   [Git](git/git.md)
--   [GitHub](git/github.md)
+-   [Git & GitHub](git_github/git_github.md)
 -   [HTML](htmlcss/html.md)
 -   [CSS](htmlcss/css.md)
 -   [Bootstrap](bootstrap/bootstrap.md)
--   [APIs](api/web_storage.md)
+-   JavaScript
+    -   [General](javascript/javascript.md)
+    -   [Arrays](javascript/arrays.md)
+    -   [Functions](javascript/functions.md)
+    -   [Modules](javascript/modules.md)
+-   [APIs & Web Storage](api/web_storage.md)
+-   [APIs & REST](api/rest.md)
+-   [DASA - Data Structures & Algorithms](dasa/algorithms.md)
 -   [DOM manipulation](dom-practice/readme.md)
 -   [Object-Oriented Programming](objectOrientedProgramming/oop.md)
 -   [Testing with Jasmine](testing/testing.md)
+-   [Code Challenges](interviews_challenges/code_challenges.md)
+-   [Technical Interviews](interviews_challenges/interviews.md)
+-   [React](react/react.md)
