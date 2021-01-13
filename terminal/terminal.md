@@ -91,3 +91,24 @@ Here's a table that illustrates what each number means.
             -   `sort < names.txt > sorted.txt`
 
 ### Piping
+
+_piping_ allows us to chain multiple commands using the _pipe_ symbol `|`
+
+-   `head` - display the first lines of a file
+    -   `head -n` to specify the number of lines
+-   `tail` - display the last lines of a file
+    -   `tail -n` to specify the number of lines
+-   `sort` - sort lines of a text file
+-   `uniq` - removes duplicated lines (data must be sorted first)
+-   `wc` - word, line, character and byte count
+-   `grep` - powerful tool for finding text. Quite useful when piped with `cat`
+
+Example pipe command
+`cat first.txt second.txt | sort | tail -n 3 | head -n 1`
+
+1.  Concatenate the two files first.txt and second.txt
+2.  Sort the results
+3.  Find the last 3 lines
+4.  Find the first line of those last 3 lines
+
+### Terminal Environment
