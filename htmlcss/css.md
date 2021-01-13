@@ -1,3 +1,102 @@
+# CSS
+
+### CSS Selectors
+
+-   a CSS **rule**:
+    `selector{ property: value;}`
+    Can be read as:
+    `who{what: how;}`
+-   **Selector** defines _who_ is targeted (which HTML element(s))
+-   **Property** defines _what_ characteristic to alter
+-   **Value** defines _how_ to alter that characteristic
+-   _Generic tag_ selectors
+    -   Easy! Just use the tag name
+
+```
+	a{ /* Links */ }
+	p{ /* Paragraph */ }
+	ul{ /* Unordered List */ }
+	li[ /* List Items */ }
+```
+
+-   _Class_
+    -   Defines a _group_ of HTML elements. Classes are designated with a `.`
+        ```
+        .name {
+        	color: purple;
+        }
+        ```
+        -   The class must also be designated in the HTML
+        ```
+        <p class="name">
+        	Robin
+        </p>
+        ```
+        -   Class names can be used multiple times
+-   _Id_
+    -   Similar to _class_ except designated with a `#` and **must** be unique (can only be used once in the HTML code)
+-   _Selectors_ can be combined
+-   _Selectors_ can have a hierarchy (ancestor/dependent) and have a space between the selectors in a CSS rule.
+    ```
+    header a {
+    	color: blue;
+    }
+    ```
+    "Select all `a` elements that are within a `header` element. "
+-   _Pseudo-class_ selectors
+    -   HTML with different states can be targeted with a pseudo-class
+        ```
+        a {
+        	color: blue;
+        }
+        a:hover {
+        	color: purple;
+        }
+        ```
+
+### CSS Display
+
+**Every element on a web page is a rectangular box**
+This is refered to as the "box model"
+**Box Model**
+
+-   refers to the box that wraps around every HTML element. It consists of:
+    -   the content - text and images
+    -   padding - the area around the content. It is transparent
+    -   border - around the padding and content. Can be hidden or styled
+    -   margin - the area outside the border. It is transparent
+
+**Display types**
+
+-   _display: inline_ - the default of all elements; ignores `height` and `width`. Margin and padding can be used and will push other elements away horizontally.
+-   _display: inline-block_ - characteristics of block, but sits inline with the natural flow of the text. `height` and `width` can be set
+-   _display: block_ - Some elements are set to block by the browser UA stylesheet. These elements include `<div>`, `<section>`, and `<ul>`, as well as text "blocks" such as `<p>` and `<h1>`. Block elements do not sit inline. By default (without setting a width) they take up as much horizontal space as they can.
+-   _display: grid_ - generates a block-level grid
+-   _display: inline-grid_ - characteristics of grid, but sits on a line
+-   _display: flex_- generates a block flex container
+-   _display: inline-flex_ - generates an inline flex container
+
+### CSS Grid
+
+Grid is a 2-dimensional system, handling both rows and columns. CSS rules are applied to both the parent element (grid container) and any child elements (grid items).
+
+### Flexbox
+
+-   CSS columns have no effect on a flex container
+
+### Typography
+
+### CSS Comments
+
+`/* one line comment*/`
+
+```
+/*
+multi-line comments should be written
+like this.
+*/
+```
+
 ### CSS Selectors Review (Codecademy)
 
 -   CSS can change the look of HTML elements. In order to do this, CSS must select HTML elements, then apply styles to them.
@@ -21,3 +120,9 @@
 8.  `margin: 0 auto` horizontally centers an element inside of its parent content area, if it has a width.
 9.  The `overflow` property can be set to `display`, `hide`, or `scroll`, and dictates how HTML will render content that overflows its parent’s content area.
 10. The `visibility` property can hide or show elements.
+
+### References
+
+-   [Codrops CSS Reference](http://tympanus.net/codrops/css_reference/)
+-   [CSS Color Units](https://marksheet.io/css-color-units.html)
+-   [Google Fonts](https://fonts.google.com/)

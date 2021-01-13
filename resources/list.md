@@ -3,7 +3,6 @@
 -   Full Stack Options
     -   [Free Code Camp](https://www.freecodecamp.org/)
     -   [The Odin Project](https://www.theodinproject.com/)
-    -   [Rithm School](https://www.rithmschool.com/)
 -   JavaScript
     -   [JavaScript for Cats](http://jsforcats.com/)
     -   [Learn JS.org](https://www.learn-js.org/)
@@ -18,6 +17,7 @@
     -   [HTML Full Course YouTube](https://youtu.be/pQN-pnXPaVg)
     -   [HTML & CSS](https://learn.shayhowe.com/)
     -   [CodeCollege.ca](https://codecollege.ca/)
+    -   [MarkSheet - free HTML & CSS tutorial](https://marksheet.io/)
 -   Code Challenges
     -   [Exercism.io](https://exercism.io/)
     -   [Programming Algorithms](https://algorithm.codingdojo.com/)

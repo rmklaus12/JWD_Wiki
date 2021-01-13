@@ -1,3 +1,10 @@
+| Action | HTTP Method   | Description                  |
+| ------ | ------------- | ---------------------------- |
+| Create | `POST`        | Creates a new resource       |
+| Read   | `GET`         | Retrieves a resource         |
+| Update | `PUT`/`PATCH` | Updates an existing resource |
+| Delete | `DELETE`      | Deletes a resource           |
+
 ## Web Storage API
 
 The Web Storage API defines two storage mechanisms:
@@ -5,26 +12,20 @@ The Web Storage API defines two storage mechanisms:
 -   Session Storage
 -   Local Storage
 
-Which are part of the set of storage options available:
+Which are part of the set of storage options available: - Cookies - IndexedDB - The Cache API
 
--   Cookies
--   IndexedDB
--   The Cache API
-
-Session and Local Storage provide a private area for data.
-==Session Storage== maintains the data stored for the duration of the page session. Multiple windows and tabs on the same site will have different Session Storage instances, unlike cookies which are shared in all sessions.
-==Local Storage== persists the data until it's explicity removed through JavaScript, or clearing the Browser cache / Locally Stored Data.
-
-Both are **protocol specific**, therefore data stored when accessed using `http` is not avaialbe to sessions accessed using `https`.
-
-Unlike cookies, Web Storage is only accessible in the browser.
-
-Both Local and Session Storage are available on the `window` object and can be accessed using `sessionStorage` and `localStorage`and they both return a Storage object.
-The Storage Object has a single property, `length`, relating to the number of data items stored.
+-   Session and Local Storage provide a private area for data.
+    -   _Session Storage_ maintains the data stored for the duration of the page session. Multiple windows and tabs on the same site will have different Session Storage instances, unlike cookies which are shared in all sessions.
+    -   _Local Storage_ persists the data until it's explicity removed through JavaScript, or clearing the Browser cache / Locally Stored Data.
+-   Both are **protocol specific**, therefore data stored when accessed using `http` is not avaialbe to sessions accessed using `https`.
+-   Unlike cookies, Web Storage is only accessible in the browser.
+-   Both Local and Session Storage are available on the `window` object and can be accessed using `sessionStorage` and `localStorage`and they both return a Storage object.
+-   The Storage Object has a single property, `length`, relating to the number of data items stored.
 
 ### Methods
 
 **`setItem(key, value)`**
+
 `setItem()` adds an item to storage & accepts a key and a value as a string:
 
 ```
@@ -70,11 +71,11 @@ try {
 	localStorage.setItem('key', 'value')
 } catch (domException) {
 	if (
-		['QuotaExceededError', 'NS_ERROR_DOM_QUOTA_REACHED'].includes(
-			domException.name
+		['QuotaExceededError','NS_ERROR_DOM_QUOTA_REACHED'].includes(
+		domException.name
 		)
 	) {
-		// handle quota limited exceeded error
+// handle quota limited exceeded error
 	}
 }
 ```

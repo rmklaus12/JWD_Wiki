@@ -66,3 +66,19 @@ This section will contain info that is not yet catorgised or is general (the gra
 -   The server-side of a web application, sometimes called the application server, handles important tasks such as authorization and authentication.
 -   The back-end of web application often has a web API which is a way of interacting with an application’s data through HTTP requests and responses.
 -   Together the technologies used to build the front-end and back-end of a web application are known as the stack, and many different languages and frameworks can be used to build a robust back-end.
+
+### Problem Solving
+
+**7-step problem solving framework**
+
+1. Define the problem
+2. Come up with solutions
+3. Do research but don't reinvent the wheel
+    - figure out which questions to ask and which existing resources you can pull from to implement your solutions
+4. Think about and choose a solution
+    - create a [decision matrix](https://toggl.com/blog/decision-matrix)
+5. Take action
+6. Hit singles
+    - do a few things well rather than a lot of things with medicore execution or reults. Stick to targeted focus rather than perfection and drilling into every little piece. Quality over quantity.
+7. Respect your time
+    - delegate around your limitations

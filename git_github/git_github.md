@@ -139,6 +139,33 @@
 
 **Creating a key** 1. Open up Terminal. 2. Anywhere in Terminal paste the following `ssh-keygen -t rsa -b 4096 -C "PUT YOUR EMAIL HERE"` and replace "PUT YOUR EMAIL HERE" with the email you used to sign up with GitHub. 3. Once you are prompted with `Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]` press enter. 4. You will then be prompted to enter a passphrase. **Just press enter here** 5. You will then be prompted to enter a passphrase again. **Just press enter here as well** 6. Paste the following in terminal: `eval "$(ssh-agent -s)"`. If you do not see a `pid` number, start from the first step again. 7. Paste the following in terminal: `ssh-add ~/.ssh/id_rsa`. if you see an error message, start from the first step again. 8. Paste the following in terminal `pbcopy < ~/.ssh/id_rsa.pub`. 9. Head over to your GitHub account (make sure you sign in). 10. In the top right corner of any page, click your profile photo, then click Settings. 11. In the user settings sidebar, click SSH and GPG keys. 12. Click New SSH key or Add SSH key. 13. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air". 14. Paste your key into the "Key" field. (you can just right click and click paste or use a keyboard shortcut. The previous command `pbcopy` did the copying for you). 15. Click Add SSH key. 16. If prompted, confirm your GitHub password. 17. Anywhere in Terminal, type `ssh -T git@github.com` and if you see "Successfully authenticated" (ignore the rest of the message) you are good to go! If you do not see that, start from the beginning again.
 
+### Pull code for a PR to test locally
+
+It's not immediately obvious how to pull down the code for a PR and test it locally. But it's [pretty easy](https://help.github.com/articles/checking-out-pull-requests-locally/). (This assumes you have a remote for the main repo named `upstream`.)
+
+**Getting the PR code**
+
+1. Make note of the PR number. For example, Rod's latest is PR #37: https://github.com/Psiphon-Labs/psiphon-tunnel-core/pull/37
+2. Fetch the PR's pseudo-branch (or bookmark or rev pointer whatever the word is), and give it a local branch name. Here we'll name it `pr37`:
+   `$ git fetch upstream pull/37/head:pr37`
+3. Switch to that branch:
+   `$ git checkout pr37`
+4. Compile and test.
+   If the PR code changes and you want to update:
+   ` # Do this while in the pr37 branch $ git pull upstream pull/37/head `
+   **Merging the PR**
+5. First, checkout the upstream master code:
+   You'll only do this the first time -- it creates the local `upstream_master` branch, tracks it to `upstream_master`, and switches to the branch:
+   `$ git checkout -t -b upstream_master upstream/master`
+6. If the branch already exists:
+   `$ git checkout upstream_master`
+7. Now merge the PR:
+   `$ git merge pr37`
+8. Now push:
+   `$ git push upstream HEAD:master`
+   (You can't just `git push` because your local branch name is different than the remote.)
+9. Done!
+
 ### Resources
 
 [Git-SCM](https://git-scm.com/)
