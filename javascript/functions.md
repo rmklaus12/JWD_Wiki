@@ -18,6 +18,41 @@ function myFunction() {
 	    }
 ```
 
+### Function _declaration_ v function _expression_
+
+function _declaration_
+: always **starts** with the keyword `function`
+`function isNil (value) { return value == null; }`
+function calls will be hoisted
+function _expression_
+: does **not start** with the `function` keyword (it is present somewhere in the statement code however)
+function calls are not hoisted
+
+```
+// function expression: starts with "const"
+  const isTruthy = function (value) {
+    return !!value;
+  };
+
+// function expression: an argument for .filter()
+  const numbers = ([1, false, 5]).filter(function (item) {
+    return typeof item === 'number';
+  });
+
+  // function expression (IIFE): starts with '('
+  // An **IIFE** (Immediately Invoked Function Expression) is a
+  // JavaScript function that runs as soon as it is defined.
+    (function messageFunction(message) {
+      return message + ' World!';
+      }) ('Hello');
+```
+
+The function expression creates a function object that can be used in different situations:
+
+-   assigned to a variable as an object `count = function(...) {...}
+-   create a method on an object `sum: function() {...}
+-   use the function as a callback .reduce(function(...) {...})
+
 Factory Functions
 : allow creation of many instances of an object quickly. Think of a manufacturing factory that provides mass production of an item. Factory functions returns an object that can be reused to make multiple object instances. Factory functions can include parameters allowing customization of the object that gets returned.
 You can call the function with the appropriate arguments to create a new object.
