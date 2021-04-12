@@ -3,13 +3,9 @@ JWD FAQs
 ## Table of Contents
 
 [Git](https://docs.google.com/document/d/18cHoOFS2C1B79FKARbahIWf4MTjOVUrcYt1LHN_4CaE/edit#heading=h.wiy7hb628ory)
-
 [Git Workflow Cheat Sheet](https://docs.google.com/document/d/18cHoOFS2C1B79FKARbahIWf4MTjOVUrcYt1LHN_4CaE/edit#heading=h.4v7fz0g2mha6)
-
 [GitHub project worksheet](https://docs.google.com/document/d/18cHoOFS2C1B79FKARbahIWf4MTjOVUrcYt1LHN_4CaE/edit#heading=h.lot223s5sszc)
-
 [Terminal / Command Line](https://docs.google.com/document/d/18cHoOFS2C1B79FKARbahIWf4MTjOVUrcYt1LHN_4CaE/edit#heading=h.5wiuqbxw2ktc)
-
 [Visual Studio Code](https://docs.google.com/document/d/18cHoOFS2C1B79FKARbahIWf4MTjOVUrcYt1LHN_4CaE/edit#heading=h.bc82sm4vktqe)
 
 This document will support you through the JWD program and we highly recommend you print this out or keep handy for easy referral.
@@ -145,3 +141,6 @@ The Windows OS creates a few oddities for developers. This section will cover th
     -   `/c/Users/user_name/OneDrive/Documents`
 -   If you use Ubuntu, files created from within the Ubuntu shell can be accessed using the following path in File Explorer:
     -   `\\wsl$\Ubuntu\user_name`
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkwNTQ0OTg5XX0=
+-->
