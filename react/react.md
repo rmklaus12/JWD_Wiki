@@ -14,11 +14,11 @@
     2.  You’ll need state _somewhere_ when information dynamically changes, like a user’s current favorite songs or top scores. Aim to have a parent component keep all the information, and pass it down to its children stateless components.
 -   Rendering is the only way for a component to pass `props` to another component. Any component rendered by a different component must be included in an `export` statement:
     ```javascript
-    import React from 'react';
-    export class Child extends React.Component {
-        render() {
-            return <h1>Hey,my name is {this.props.name}</h1>;
-        }
+    import  React  from  'react';
+    export  class  Child  extends  React.Component {
+        	render() {
+            		return <h1>Hey,my name is {this.props.name}</h1>;
+        	}
     }
     ```
 -   A parent component passes its state to a child component. Need to import parent into child first.
@@ -62,8 +62,8 @@ const BooksList = ({ books }) => {
 
 ```javascript
 class Parent extends React.Component {
-    render() {
-        return <div></div>;
+    	render() {
+        		return <div></div>;
     }
 }
 ```
@@ -173,4 +173,9 @@ In addition to setting and updating `state`, you can also define methods for you
 
 One common way is to explicitly bind `this` in the constructor so `this` becomes bound to the class methods when the component is initialized. You may have noticed the last challenge used `this.handleClick = this.handleClick.bind(this)` for its `handleClick` method in the constructor. Then, when you call a function like `this.setState()` within your class method, `this` refers to the class and will not be `undefined`.
 
-**Note:** The `this` keyword is one of the most confusing aspects of JavaScript but it plays an important role in React.
+**Note:** The `this` keyword is one of the most confusing aspects of JavaScript but it plays an important role in React.	}
+ }
+```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIyNjUwOTk4Nl19
+-->
