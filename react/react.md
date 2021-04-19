@@ -176,6 +176,8 @@ One common way is to explicitly bind `this` in the constructor so `this` becomes
 **Note:** The `this` keyword is one of the most confusing aspects of JavaScript but it plays an important role in React.	}
  }
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjUwOTk4Nl19
+eyJoaXN0b3J5IjpbMTc1MjcwNDMxNCwtMjI2NTA5OTg2XX0=
 -->
