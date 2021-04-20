@@ -45,12 +45,17 @@ Inside of  `.handleClick()`‘s body, call  `this.setState()`. As an argument, p
 ```
 color: this.chooseColor()
 ```
-9.   
-You just created a new method, that you will eventually use as an  _event handler_. Your new method uses  `this`.
-
+9.   You just created a new method, that you will eventually use as an  _event handler_. Your new method uses  `this`.
 That means that you need to  _bind_  your new method.
-
 Add a new line to your  `constructor()`  method. On this new line, bind  `handleClick()`.
+10.   Great!  `this.handleClick()`  will update  `this.state.color`  to a new, random color.
+Now that you’ve defined an  _event handler_, you can pass it to another component as a  `prop`. This is a pattern that you’ll see much more of in the next course.
+In  `Random`‘s render method, give  `<Button />`  an attribute with a  _name_  of  `onClick`. Set  `onClick`‘s  _value_  equal to the  `handleClick`  method.
+11. Select **Button.js**. In the `render` function, give the `<button></button>` an `onClick` attribute. Set `onClick`‘s _value_ equal to the passed-in prop.
+12.   Try clicking the button a few times!
+If you tried to make sense of the built-in parts of  `Random`, you may have come up confused. This is because  `Random`  includes two special functions that we haven’t discussed yet:  `componentDidMount`  and  `componentDidUpdate`.
+These functions are examples of a powerful React feature called  _lifecycle methods._  You’ll learn all about lifecycle methods in  _Introduction to React.js: Part II_.
+BONUS: Notice that the  `<h1></h1>`‘s text is white if the screen’s background is a darker color, but the text is black is the screen’s background is a lighter color. Similarly, the  `<button></button>`  changes colors based on whether the background is dark or light. Can you figure out how that works?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjM1NDc3NV19
+eyJoaXN0b3J5IjpbMTc3NjM3MTc0OF19
 -->
