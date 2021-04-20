@@ -25,7 +25,7 @@ When you install Node, you automatically get npm installed on your computer as w
 To upgrade to the latest version of npm on *nix (OSX, Linux, etc.), you can run this command in your terminal:
 
 ```
-
+sudo npm install -g npm@latest
 ```
 
 To upgrade on Windows, follow the steps found  [in the npm documentation](https://docs.npmjs.com/try-the-latest-stable-version-of-npm).
@@ -42,20 +42,21 @@ Open up your terminal.
 
 -   If you’ve previously installed  `create-react-app`  globally via  `npm install -g create-react-app`, it is recommended that you uninstall the package first. In your terminal run these commands:
     
-    ```
-    
-    ```
+```
+	npm uninstall -g create-react-app  
+	npx create-react-app myfirstreactapp 
+```
     
 -   If you’ve never installed  `create-react-app`  before, you can simply run this command:
     
     ```
-    
+    npx create-react-app myfirstreactapp
     ```
     
 -   If you have  _Yarn_  installed,  `create-react-app`  will use it by default to create new projects. If you would prefer to use npm, you can append  `--use-npm`  to the creation command. It will look like this:
     
     ```
-    
+    npx create-react-app myfirstreactapp --use-npm
     ```
     
 
@@ -146,5 +147,5 @@ If you’d like to learn more about create-react-app, start with the  [documenta
 
 Since an important next step after creating a React App is to set up your environment to debug it, consider checking out our  [React Developer Tools article](https://www.codecademy.com/paths/web-development/tracks/front-end-applications-with-react/modules/react-development-setup-and-ravenous-part-1/informationals/ready-react-developer-tools). There, we use the initial skeleton created with create-react-app to get you ready to begin debugging React Apps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDMzMjMxNzddfQ==
+eyJoaXN0b3J5IjpbLTExMjgwNDI3NjJdfQ==
 -->
