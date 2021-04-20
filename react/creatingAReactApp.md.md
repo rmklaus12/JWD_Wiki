@@ -73,7 +73,28 @@ Before we run the app, let’s take a look around the app structure and see what
 Change directories into the app you just created, and open the app in the text editor of your choice. You should see the following file structure:
 
 ```
-
+myfirstreactapp  
+├── node_modules  
+├── public  
+│ ├── favicon.ico  
+│ ├── index.html  
+│ ├── logo192.png  
+│ ├── logo512.png  
+│ ├── manifest.json  
+│ └── robots.txt  
+├── src  
+│ ├── App.css  
+│ ├── App.js  
+│ ├── App.test.js  
+│ ├── index.css  
+│ ├── index.js  
+│ ├── logo.svg  
+│ ├── serviceWorker.js  
+│ └── setupTests.js  
+├── .gititgnore  
+├── package.json  
+├── package-lock.json  
+└── README.md
 ```
 
 create-react-app has taken care of setting up the main structure of the application as well as a couple of developer settings. Most of what you see will not be visible to the visitor of your web app. React uses a tool called  _webpack_  which transforms the directories and files here into static assets. Visitors to your site are served those static assets.
@@ -147,5 +168,5 @@ If you’d like to learn more about create-react-app, start with the  [documenta
 
 Since an important next step after creating a React App is to set up your environment to debug it, consider checking out our  [React Developer Tools article](https://www.codecademy.com/paths/web-development/tracks/front-end-applications-with-react/modules/react-development-setup-and-ravenous-part-1/informationals/ready-react-developer-tools). There, we use the initial skeleton created with create-react-app to get you ready to begin debugging React Apps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjgwNDI3NjJdfQ==
+eyJoaXN0b3J5IjpbLTE0MTgyMTE1NzJdfQ==
 -->
