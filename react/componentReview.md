@@ -20,6 +20,32 @@ In the example code, we see JavaScript prior to the  `return`  statement which r
   
 // This is considered a JSX HTML tag.  
 <div>
+```
+React requires that the first letter of components be capitalized. JSX will use this capitalization to tell the difference between an HTML tag and a component instance. If the first letter of a name is capitalized, then JSX knows it’s a component instance; if not, then it’s an HTML element.
+
+### Object Properties As Attribute Values
+
+    const seaAnemones = {  
+	    src:'https://commons.wikimedia.org/wiki/Category:Images#/media/File:Anemones_0429.jpg',  
+	    alt: 'Sea Anemones',  
+	    width: '300px',  
+    };  
+      
+    class  SeaAnemones  extends  React.Component {  
+	    render() {  
+		    return (  
+    <div>  
+    <h1>Colorful  Sea  Anemones</h1>  
+    <img  
+    src={seaAnemones.src}  
+    alt={seaAnemones.alt}  
+    width={seaAnemones.width}  
+    />  
+    </div>  
+    );  
+    }  
+    }
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTQ1Njg5XX0=
+eyJoaXN0b3J5IjpbMjEyOTAzMjQ2M119
 -->
