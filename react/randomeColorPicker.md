@@ -20,7 +20,14 @@ Instead of x, y, and z, use three numbers between 0 and 255.
 3.   It would be nice to know what color we’re looking at!
 In the  `render()`  method, inside of the  `<h1></h1>`, add the text,  `Your color is ___.`
 Instead of  `___`, access  `this.state.color`!
-4. 
+4. That’s not a very friendly way to display a color!
+In  `Random`, find the method named  `formatColor`. This method transforms an rgb array into something a bit more readable.
+Inside of the  `<h1></h1>`, instead of simply using  `this.state.color`, call the  `formatColor`  function and pass in  `this.state.color`  as an argument.
+5.   That’s a bit better!
+
+A user should be able to click on a button to pick a new random color. In the code editor, you can see a  **Button.js**  file. That will be your button!
+
+Select  **Button.js**. Add the word  `export`  so that you are exporting the  `Button`  component class.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTY3OTI4NF19
+eyJoaXN0b3J5IjpbMTA1MDg2NDM1NV19
 -->
