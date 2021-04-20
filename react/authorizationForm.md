@@ -35,7 +35,7 @@ Give the  `<form></form>`  an attribute of  `action="#"`.
 5.   Good! Now let’s give your form some  `<input />`s for the user to fill out.
 In between the  `<form></form>`  tags, write two  `<input />`  tags. Give the first  `<input />`  two attributes:  `type="password"`  and  `placeholder="Password"`. Give the second  `<input />`  one attribute:  `type="submit"`.
 6.   Now let’s hide the contact info.
-	7After your  `login`  variable, declare another variable named  `contactInfo`. Set it equal to empty parentheses:
+	After your  `login`  variable, declare another variable named  `contactInfo`. Set it equal to empty parentheses:
 ```
 const contactInfo = (  
   
@@ -43,6 +43,14 @@ const contactInfo = (
 return (
 ```
 Cut the  `<ul></ul>`  out of the return statement, and paste it in between those parentheses!
+7.   Great! By saving two JSX expressions as variables, you’ve set yourself up nicely to toggle between them.
+In the render function’s  `return`  statement, make a new line right below the  `<h1></h1>`. On this new line, use a ternary operator. If  `this.state.authorized`  is true, make the ternary return  `contactInfo`. Otherwise, make the ternary return  `login`.
+8.   On lines 14 through 21, you can see a method named  `.authorize()`.
+This method will check whether a submitted password is equal to ‘swordfish’. If it is, then  `this.state.authorized`  will become  `true`.
+You need  `authorize`  to get called whenever a user hits “Submit!”
+Give the  `<form></form>`  an  `onSubmit`  attribute. Set the attribute’s  _value_  equal to the  `authorize`  function.
+9.   Try entering an incorrect password and hitting ‘Submit.’ Nothing should happen.
+Now try entering ‘swordfish.’ Your screen should change!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDcyMjIyXX0=
+eyJoaXN0b3J5IjpbNzczOTU5MTAxXX0=
 -->
