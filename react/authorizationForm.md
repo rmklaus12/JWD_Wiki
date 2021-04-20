@@ -15,7 +15,7 @@ Right now, the  `<h1></h1>`  displays the text  `Contact`. If a user hasn’t be
 Make the  `<h1></h1>`  display  `Contact`  _only_  if  `this.state.authorized`  is true. If  `this.state.authorized`  is false, then the  `<h1></h1>`  should display  `Enter the Password`.
 3.   The browser should say ‘Enter the Password.’
 To make sure it’s working properly, edit the  `constructor()`  method so that the user is authorized:
-	```
+```
 	constructor(props) {  
 		super(props);  
 		this.state = {  
@@ -24,11 +24,25 @@ To make sure it’s working properly, edit the  `constructor()`  method so that 
 		};  
 		this.authorize = this.authorize.bind(this);  
 	}
-	```
+```
 
 This should change the text back to ‘Contact’.
-
 If it works, then make sure to change  `authorized`  back to  `false`!
+4. If the user isn’t authorized, then you want them to see a login form into which they can enter a password. Let’s make that login form!
+In the  `.render()`  method, before the  `return`  statement, declare a new variable named  `login`.
+Set  `login`  equal to a JSX  `<form></form>`  element. This  `<form></form>`  is going to have multiple children, so wrap it in parentheses!
+Give the  `<form></form>`  an attribute of  `action="#"`.
+5.   Good! Now let’s give your form some  `<input />`s for the user to fill out.
+In between the  `<form></form>`  tags, write two  `<input />`  tags. Give the first  `<input />`  two attributes:  `type="password"`  and  `placeholder="Password"`. Give the second  `<input />`  one attribute:  `type="submit"`.
+6.   Now let’s hide the contact info.
+	7After your  `login`  variable, declare another variable named  `contactInfo`. Set it equal to empty parentheses:
+```
+const contactInfo = (  
+  
+);  
+return (
+```
+Cut the  `<ul></ul>`  out of the return statement, and paste it in between those parentheses!
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzk5NTU0NV19
+eyJoaXN0b3J5IjpbLTE4MDcyMjIyXX0=
 -->
