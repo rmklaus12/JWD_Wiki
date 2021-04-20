@@ -34,18 +34,17 @@ React requires that the first letter of components be capitalized. JSX will use 
     class  SeaAnemones  extends  React.Component {  
 	    render() {  
 		    return (  
-    <div>  
-    <h1>Colorful  Sea  Anemones</h1>  
-    <img  
-    src={seaAnemones.src}  
-    alt={seaAnemones.alt}  
-    width={seaAnemones.width}  
-    />  
-    </div>  
-    );  
-    }  
-    }
-
+			    <div>  
+				    <h1>Colorful  Sea  Anemones</h1>  
+				    <img  
+					    src={seaAnemones.src}  
+					    alt={seaAnemones.alt}  
+					    width={seaAnemones.width}  
+					/>  
+			    </div>  
+			   );  
+		    }  
+	    }
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTAzMjQ2M119
+eyJoaXN0b3J5IjpbNTIwNDQ4MTQzXX0=
 -->
